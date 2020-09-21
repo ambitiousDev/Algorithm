@@ -12,7 +12,7 @@ def largestPalindrom(digits):
     max = int(max)
     start = time.time()
     for i in range(max, min, -1):
-        for j in range(i, min, -1):
+        for j in range(max, min, -1):
             temp = i*j
             if temp < pal:
                 break
